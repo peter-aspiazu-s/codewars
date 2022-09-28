@@ -9,15 +9,12 @@
 
 const expresionRegularAlfa = /[-_]+/g
 const toCamelCase = (str) => {
-
     let arr = str.split(expresionRegularAlfa)
     let arr2 = []
     for(let i = 1; i < arr.length; i++ ){
         arr2.push(arr[i].replace(arr[i][0], arr[i][0].toUpperCase()))
     }
     console.log(arr[0] + arr2.join(''))
-
-
 }
 
 toCamelCase("the-stealth-warrior")
